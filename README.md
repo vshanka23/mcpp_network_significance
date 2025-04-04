@@ -106,7 +106,7 @@ null device
 
 # Helpful resources
 ## Database Networks
-As part of the repo, we have provided some reconstructed databases for *Drosophila melanogaster* and *Homo sapiens*
+As part of the repo, we have provided some preconstructed databases for *Drosophila melanogaster* and *Homo sapiens*
 1. ```d_mel_flybase_interaction_2024_02_all.txt```is the [FlyBase Interaction Database](https://flybase.org/downloads/bulkdata) version 2024_02 consisting of both genetic and physical interactions.
 2. ```d_mel_flybase_interaction_2024_02_phy.txt``` is the same as above but filtered for physical interactions only.
 3.  ```d_mel_flybase_interaction_2024_02_gen.txt``` is the same as above but filtered for genetic interactions only.
