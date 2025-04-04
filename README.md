@@ -51,8 +51,8 @@ FOXO3
 #SBATCH --partition=<partition name>
 #SBATCH --time=1:00:00
 #SBATCH --mem=4G
-#SBATCH --output=<path_to_standard_output>/MCPP.%j.out
-#SBATCH --error=/<path_to_standard_error>/MCPP.%j.err
+#SBATCH --output=<path_to_store_standard_output>/MCPP.%j.out
+#SBATCH --error=<path_to_store_standard_error>/MCPP.%j.err
 #SBATCH --mail-type=all
 #SBATCH --mail-user=<email>
 
@@ -110,7 +110,7 @@ As part of the repo, we have provided some reconstructed databases for *Drosophi
 1. ```d_mel_flybase_interaction_2024_02_all.txt```is the [FlyBase Interaction Database](https://flybase.org/downloads/bulkdata) version 2024_02 consisting of both genetic and physical interactions.
 2. ```d_mel_flybase_interaction_2024_02_phy.txt``` is the same as above but filtered for physical interactions only.
 3.  ```d_mel_flybase_interaction_2024_02_gen.txt``` is the same as above but filtered for genetic interactions only.
-4. ```h_sap_string-db_11.5_CS500.txt``` is the protein-protein interaction database for *H.sapiens* from STRING-db v11.5 that has been filtered for combined scores of 500 and above.
+4. ```h_sap_string-db_11.5_CS500.txt``` is the protein-protein interaction database for *H.sapiens* from [STRING-db](https://string-db.org/cgi/download?sessionId=b1QJliUQu3nf&species_text=Homo+sapiens&settings_expanded=0&min_download_score=0&filter_redundant_pairs=0&delimiter_type=txt) v11.5 that has been filtered for combined scores of 500 and above.
 ## Test files
 1. ```test_network_genes.txt``` is a test file consisting of a set of *Drosophila* genes that results in a strongly contigious/complex network. This file can be used with ```d_mel_flybase_interaction_2024_02``` ```all,phy,```or```gen``` database networks from above to test the R script. 
  2. ``` test_random_genes.txt``` is a test file that consists of a random set of *Drosophila* genes. This file can be used with ```d_mel_flybase_interaction_2024_02``` ```all,phy,```or```gen``` database networks to show negative control.
